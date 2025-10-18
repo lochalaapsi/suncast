@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunCast</title>
+    <!-- Favicon and Google Fonts/Icons -->
+    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/sun.png" type="image/png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="weather-body">
+      <div id="weatherApp">
+        <div class="title">SunCast</div>
+
+        <div id="top">
+          <div id="search-bar">
+            <div>
+              <input list="cityList" id="city" type="text" autocomplete="off" placeholder="Enter City Name...">
+            </div>
+            <datalist id="cityList"></datalist>
+            <div id="search" onclick="getdata()">
+              <button id="button" class="material-symbols-outlined">search</button>
+            </div>
+          </div>
+          <div class="top1">
+            <div id="temp-box">
+              <div id="temp">
+                <span id="temp-val">24.5°C</span>
+              </div>
+              <div id="details">
+                <div id="cityname">London</div>
+                <div id="state">United Kingdom</div>
+              </div>
+            </div>
+            <div id="photo">
+            </div>
+          </div>
+        </div>
+
+        <div id="mid">
+          <div id="tempf">Fahrenheit: 76.1°F</div>
+          <div id="humidity">Humidity: 68%</div>
+          <div id="wind">Wind: 12 km/h</div>
+          <div id="cloud">Cloud: 75%</div>
+          <div id="uv">UV Index: 5</div>
+        </div>
+
+        <div id="bottom">
+          <div id="time-bar">Oct 18, 2025 - 10:18 AM</div>
+          <div id="weather-level">Partly Cloudy</div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
